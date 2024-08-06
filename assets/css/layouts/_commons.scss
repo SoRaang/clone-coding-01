@@ -1,0 +1,19 @@
+/* _commons.scss */
+
+#wrap {
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: overlay;
+}
+
+#contentView {
+    margin-block-start: 6rem;
+}
+
+.inner-wrapper {
+    margin-inline: auto;
+    padding-inline: .4rem;
+    width: min(100% - 1rem, 54rem);
+}
+
+/* _commons.scss */
