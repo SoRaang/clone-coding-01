@@ -6,3 +6,7 @@ function toggleAction() {
     if (!searchToggler.classList.contains('on')) searchToggler.classList.toggle('on');
     searchToggler.removeEventListener('click', toggleAction);
 }
+
+const navObject = [
+
+]

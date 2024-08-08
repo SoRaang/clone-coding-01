@@ -1,5 +1,51 @@
 /* _mainPage.scss */
 
+#mainVisual {
+    width: 100vw;
+    aspect-ratio: 2000 / 646;
+    background-image: url('../images/2024_august_bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 
+.visual-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+    height: 100%;
+}
+
+.main-visual-logo {
+    width: 12vmax;
+}
+
+.drink-container {
+    display: flex;
+    align-items: center;
+    height: 60%;
+}
+
+.main-visual-image {
+    display: block;
+    background-size: cover;
+
+    & + & {
+        margin-inline-start: -3vw;
+    }
+
+    &.set {
+        &-1,
+        &-2,
+        &-3 {
+            height: 100%;
+        }
+
+        &-4 {
+            height: 75%;
+        }
+    }
+}
 
 /* _mainPage.scss */

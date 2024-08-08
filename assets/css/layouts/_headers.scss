@@ -1,7 +1,7 @@
 /* _headers.scss */
 
 #headPrimary { // 메인 헤더
-    position: fixed;
+    position: sticky;
     inset: 0;
     margin-block-end: auto;
     height: fit-content;
@@ -157,6 +157,33 @@
             color: rgb(255 255 255 / .75);
             font-size: .6rem;
         }
+    }
+}
+
+#headSecondary {
+    display: none;
+    position: fixed;
+    inset: 0;
+    margin-block-end: auto;
+    padding: .5rem;
+    height: fit-content;
+    background-color: rgb(246 245 239);
+    outline: 1px solid rgb(0 0 0 / .1);
+    z-index: 50000;
+}
+
+#navSecondary {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 1020px) {
+    #headPrimary {
+        display: none;
+    }
+
+    #headSecondary {
+        display: initial;
     }
 }
 

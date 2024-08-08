@@ -451,10 +451,6 @@ a {
   overflow-y: overlay;
 }
 
-#contentView {
-  margin-block-start: 6rem;
-}
-
 .inner-wrapper {
   margin-inline: auto;
   padding-inline: 0.4rem;
@@ -464,7 +460,7 @@ a {
 /* _commons.scss */
 /* _headers.scss */
 #headPrimary {
-  position: fixed;
+  position: sticky;
   inset: 0;
   margin-block-end: auto;
   height: -moz-fit-content;
@@ -602,8 +598,75 @@ a {
   font-size: 0.6rem;
 }
 
+#headSecondary {
+  display: none;
+  position: fixed;
+  inset: 0;
+  margin-block-end: auto;
+  padding: 0.5rem;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: rgb(246, 245, 239);
+  outline: 1px solid rgba(0, 0, 0, 0.1);
+  z-index: 50000;
+}
+
+#navSecondary {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 1020px) {
+  #headPrimary {
+    display: none;
+  }
+  #headSecondary {
+    display: initial;
+  }
+}
 /* _headers.scss */
 /* _mainPage.scss */
+#mainVisual {
+  width: 100vw;
+  aspect-ratio: 2000/646;
+  background-image: url("../images/2024_august_bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.visual-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5vw;
+  height: 100%;
+}
+
+.main-visual-logo {
+  width: 12vmax;
+}
+
+.drink-container {
+  display: flex;
+  align-items: center;
+  height: 60%;
+}
+
+.main-visual-image {
+  display: block;
+  background-size: cover;
+}
+.main-visual-image + .main-visual-image {
+  margin-inline-start: -3vw;
+}
+.main-visual-image.set-1, .main-visual-image.set-2, .main-visual-image.set-3 {
+  height: 100%;
+}
+.main-visual-image.set-4 {
+  height: 75%;
+}
+
 /* _mainPage.scss */
 /* _subPages.scss */
 /* _subPages.scss */
