@@ -9,4 +9,4 @@ function toggleAction() {
 
 const navObject = [
 
-]
+];

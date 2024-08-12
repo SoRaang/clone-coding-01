@@ -1,5 +1,13 @@
 /* _mainPage.scss */
 
+#wrap {
+    background-image: url('../images/2024_august_pick_bg.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
 #mainVisual {
     width: 100vw;
     aspect-ratio: 2000 / 646;
@@ -17,6 +25,13 @@
     height: 100%;
 }
 
+.logo-container {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 1rem;
+}
+
 .main-visual-logo {
     width: 12vmax;
 }
@@ -24,7 +39,17 @@
 .drink-container {
     display: flex;
     align-items: center;
-    height: 60%;
+
+    &.full {
+        height: 60%;
+    }
+
+    &.mobile {
+        display: none;
+        flex-flow: column nowrap;
+        justify-content: center;
+        height: auto;
+    }
 }
 
 .main-visual-image {
@@ -46,6 +71,115 @@
             height: 75%;
         }
     }
+}
+
+@media screen and (max-width: 1020px) {
+    #mainVisual {
+        aspect-ratio: 640 / 2185;
+        background-image: url('../images/2024_august_bg_m.jpg');
+    }
+
+    .visual-holder {
+        flex-flow: column nowrap;
+    }
+
+    .main-visual-logo {
+        width: auto;
+    }
+
+    .drink-container {
+        &.full {
+            display: none;
+        }
+
+        &.mobile {
+            display: flex;
+        }
+    }
+}
+
+#secNews {
+    background-color: white;
+}
+
+.news-headline {
+    background-image: linear-gradient(to right, black 50%, white 50%);
+
+    > .inner-wrapper {
+        display: flex;
+
+        > * {
+            flex: 1;
+        }
+    }
+}
+
+.news-inner {
+    display: flex;
+
+    &.left {
+        justify-content: flex-start;
+        gap: 1rem;
+        margin-inline-start: auto;
+    }
+
+    &.right {
+        justify-content: flex-end;
+        margin-inline-end: auto;
+    }
+}
+
+.news-scroller {
+    padding-block: 1rem;
+    background-color: black;
+    color: white;
+}
+
+.promotion-opener {
+    padding-block: 1rem;
+}
+
+#promoSlider {
+    height: 0;
+    overflow: hidden;
+
+    &.on {
+        height: 100%;
+    }
+}
+
+#secReward {
+    background-color: rgb(30 57 50);
+    color: white;
+}
+
+#secNewItems {
+
+}
+
+.new-item-container {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &.item-01 {
+        background-image: url('../images/25th_summer_bean_bg.png');
+    }
+
+    &.item-02 {
+        background-image: url('../images/240521_pc_reserve_bg_1.jpg');
+    }
+}
+
+#secMagazine {
+    background-color: white;
+}
+
+#secFindStore {
+    background-image: url('../images/store_bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 /* _mainPage.scss */

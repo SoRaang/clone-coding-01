@@ -447,14 +447,30 @@ a {
 /* _commons.scss */
 #wrap {
   position: relative;
-  overflow-x: hidden;
-  overflow-y: overlay;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 .inner-wrapper {
   margin-inline: auto;
   padding-inline: 0.4rem;
   width: min(100% - 1rem, 55rem);
+}
+
+.button-outline-fill {
+  --button-color: attr(data-button-color);
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  border-radius: 0.25rem;
+  border: 0.1rem solid var(--button-color);
+  color: var(--button-color);
+  font-weight: 600;
+  transition: 0.3s;
+}
+.button-outline-fill:hover {
+  background-color: var(--button-color);
+  color: white;
 }
 
 /* _commons.scss */
@@ -626,6 +642,14 @@ a {
 }
 /* _headers.scss */
 /* _mainPage.scss */
+#wrap {
+  background-image: url("../images/2024_august_pick_bg.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
 #mainVisual {
   width: 100vw;
   aspect-ratio: 2000/646;
@@ -643,6 +667,13 @@ a {
   height: 100%;
 }
 
+.logo-container {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 1rem;
+}
+
 .main-visual-logo {
   width: 12vmax;
 }
@@ -650,7 +681,15 @@ a {
 .drink-container {
   display: flex;
   align-items: center;
+}
+.drink-container.full {
   height: 60%;
+}
+.drink-container.mobile {
+  display: none;
+  flex-flow: column nowrap;
+  justify-content: center;
+  height: auto;
 }
 
 .main-visual-image {
@@ -667,10 +706,106 @@ a {
   height: 75%;
 }
 
+@media screen and (max-width: 1020px) {
+  #mainVisual {
+    aspect-ratio: 640/2185;
+    background-image: url("../images/2024_august_bg_m.jpg");
+  }
+  .visual-holder {
+    flex-flow: column nowrap;
+  }
+  .main-visual-logo {
+    width: auto;
+  }
+  .drink-container.full {
+    display: none;
+  }
+  .drink-container.mobile {
+    display: flex;
+  }
+}
+#secNews {
+  background-color: white;
+}
+
+.news-headline {
+  background-image: linear-gradient(to right, black 50%, white 50%);
+}
+.news-headline > .inner-wrapper {
+  display: flex;
+}
+.news-headline > .inner-wrapper > * {
+  flex: 1;
+}
+
+.news-inner {
+  display: flex;
+}
+.news-inner.left {
+  justify-content: flex-start;
+  gap: 1rem;
+  margin-inline-start: auto;
+}
+.news-inner.right {
+  justify-content: flex-end;
+  margin-inline-end: auto;
+}
+
+.news-scroller {
+  padding-block: 1rem;
+  background-color: black;
+  color: white;
+}
+
+.promotion-opener {
+  padding-block: 1rem;
+}
+
+#promoSlider {
+  height: 0;
+  overflow: hidden;
+}
+#promoSlider.on {
+  height: 100%;
+}
+
+#secReward {
+  background-color: rgb(30, 57, 50);
+  color: white;
+}
+
+.new-item-container {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.new-item-container.item-01 {
+  background-image: url("../images/25th_summer_bean_bg.png");
+}
+.new-item-container.item-02 {
+  background-image: url("../images/240521_pc_reserve_bg_1.jpg");
+}
+
+#secMagazine {
+  background-color: white;
+}
+
+#secFindStore {
+  background-image: url("../images/store_bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 /* _mainPage.scss */
 /* _subPages.scss */
 /* _subPages.scss */
 /* _footers.scss */
+#footPrimary {
+  background-color: rgb(44, 42, 41);
+  color: white;
+}
+
 /* _footers.scss */
 /* _buttons.scss */
 /* _buttons.scss */
