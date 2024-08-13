@@ -75,6 +75,10 @@
     }
 }
 
+.fade-in {
+    opacity: 0;
+}
+
 @media screen and (max-width: 1020px) {
     #mainVisual {
         aspect-ratio: 640 / 2185;

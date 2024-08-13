@@ -13,7 +13,14 @@ const navObject = [
 
 // ----- GSAP 애니메이션 사용 예시
 
+const gsapFadeins = document.querySelectorAll('.fade-in');
 
+gsapFadeins.forEach((el, index) => {
+    gsap.to(el, 1, {
+        delay: (index + 1) * .5,
+        opacity: 1
+    });
+});
 
 // ----- 뉴스티커
 
@@ -65,3 +72,7 @@ btnToggleSlide.addEventListener('click', (e) => {
         e.currentTarget.classList.add('paused');
     }
 });
+
+// ----- AOS
+
+AOS.init()
