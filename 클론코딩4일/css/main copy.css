@@ -335,13 +335,16 @@ body {
     background-size: cover;
     height: 32vw;
     margin-top: 121px;
+
   }
   .main-visual-inner{
     position: relative;
     height: 100%;
+    
   }
   .main-visual-inner img{
     width: 100%;
+    height: auto;
   }
   .main-visual-slogan{
     position:absolute;
@@ -386,7 +389,222 @@ body {
     right: 14vw;
     width: 19.95vw;
   }
+  /*main-visual-m*/
+  .main-visual-wrap-m{
+    background: url("../images/2024_august_bg_m.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 342vw;
+    margin-top: 70px;
+  }
+  .main-visual-wrap-m .main-visual-inner{
+    height: 100%;
+  }
+  .main-visual-wrap-m .main-visual-slogan{
+    position: absolute;
+    width: 33.75vw;
+    top: 15.625vw;
+    left: 16.094vw;
+  }
+  .main-visual-wrap-m .main-visual-set{
+    height: 100%;
+}
+.main-visual-wrap-m .main-visual-set .set1{
+  position: absolute;
+  top: 52.656vw;
+  left: 17.969vw;
+  width: 82.031vw;
+  max-width: 100%;
+}
+.main-visual-wrap-m .main-visual-set .set2{
+  position: absolute;
+  top: 107.969vw;
+  left: 13.75vw;
+  width: 69.688vw;
+  max-width: 100%;
+  overflow: hidden;
+}
+.main-visual-wrap-m .main-visual-set .set3{
+  position: absolute;
+  top: 176.406vw;
+  left: 18.281vw;
+  width: 81.719vw;
+  max-width: 100%;
+}
+.main-visual-wrap-m .main-visual-set .set4{
+  position: absolute;
+  top: 234.219vw;
+  left: 13.906vw;
+  width: 71.25vw;
+  max-width: 100%;
+}
+.main-visual-wrap-m .btn-slogan {
 
+  position: absolute;
+  top: 308.438vw;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 0;
+  height: auto;
+  bottom: auto;
+}
+
+
+/*Notice*/
+.notice .notice-line {
+  position: relative;
+}
+/* .notice .notice-line
+.notice .notice-line .notice-left {
+  width: 50%;
+  background-color: #333;
+  position: absolute;
+  height: 62px;
+}
+.notice .notice-line .notice-right {
+  width: 50%;
+  background-color: #f6f5ef;
+  position: absolute;
+  height: 62px;
+  right: 0;
+} */
+.notice .notice-line .inner {
+  height: 62px;
+  display: flex;
+}
+.notice .notice-line .inner {
+  font-weight: 600;
+}
+.notice .notice-line .inner-left {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  background-color: #333;
+}
+.notice .notice-line .inner-left .inner-left-text{
+  width: 80%;
+  display: flex;
+  align-items: center;
+}
+.notice .notice-line .inner-left h2 {
+  margin-left: 20px;
+}
+.notice .notice-line .inner-left .swiper {
+  height: 62px;
+  margin: 0 20px;
+}
+.notice .notice-line .inner-left .swiper-slide {
+  height: 62px;
+  display: flex;
+  align-items: center;
+}
+.notice .notice-line .inner-left .swiper-slide a {
+  color: #fff;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  text-decoration: none;
+  font-weight: 400;
+}
+.notice .notice-line .inner-left .material-symbols-outlined {
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 5px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.notice .notice-line .inner-right {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  color: #333;
+  justify-content: space-between;
+}
+.notice .notice-line .inner-right h2 {
+  margin-left: 20px;
+}
+.notice .notice-line .inner-right .material-symbols-outlined {
+  color: #333;
+  border: 2px solid #333;
+  padding: 0px;
+  border-radius: 50%;
+  font-size: 34px;
+  margin-right: 20px;
+}  
+/*Notice promotion*/
+.notice .promotion {
+  background-color: #f6f6ee;
+  height: 700px;
+  position: relative;
+  overflow: hidden;
+}
+.notice .promotion.hide {
+  height: 0;
+}
+.notice .promotion .swiper {
+  width: calc(819px * 3 + 30px);
+  height: 553px;
+  position: absolute;
+  left: 50%;
+  margin-left: calc((819px * 3 + 30px) / -2);
+}
+.notice .promotion .swiper .swiper-wrapper{
+  display: flex;
+}
+.notice .promotion .swiper-pagination {
+  position: absolute;
+  bottom: 0;
+}
+.notice .promotion .swiper-slide {
+  position: relative;
+  opacity: 0.5;
+  z-index: 1;
+}
+.notice .promotion .swiper-slide-active {
+  opacity: 1;
+}
+.notice .promotion .swiper-pagination-bullet {
+  background-color: black;
+  width: 18px;
+  height: 18px;
+  margin: 0 8px;
+}
+
+.notice .promotion .swiper-next,
+.notice .promotion .swiper-prev {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #333;
+  border-radius: 50%;
+  bottom: 0;
+  position: absolute;
+  top: 225px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+  color: black;
+  font-size: 30px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.notice .promotion .swiper-next {
+  right: 50%;
+  margin-right: -480px;
+}
+.notice .promotion .swiper-prev {
+  left: 50%;
+  margin-left: -480px;
+}
+.notice .promotion .swiper-next:hover,
+.notice .promotion .swiper-prev:hover {
+  background-color: #333;
+  color: #fff;
+}
   
 
   /*스타벅스 리워드*/
@@ -629,6 +847,9 @@ body {
   header .tablet_gnb{
     display: none;
   }
+  .main-visual-wrap-m{
+    display: none;
+  }
   .pc_img{
     display: block;
   }
@@ -642,7 +863,8 @@ body {
       display: none;
   }
   .main-visual-wrap{
-    margin-top: 70px;
+    display: none;
+    /* margin-top: 70px; */
   }
   .sbRewards .inner .rewards-right{
     width: 60%;
@@ -665,10 +887,106 @@ body {
     height: 125vw;
   }
   .main-bean .inner{
-    display: unset;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-bean .inner .main-bean-left {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+  }
+  .main-bean .inner .main-bean-left > img{
+    width: 70%;
+  }
+  .main-bean .inner .main-bean-right{
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .reserve-bean{
+    background: transparent;
+    width: 100%;
+    height: 100%;
+  }
+  .reserve-bean .inner .reserve-bean-left{
+    top: 85%;
+    left: 50%;
+    margin-left: -194px;
+  }
+  .pickYour{
+    height: 150vw;
+  }
+  .pickYour .inner{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .pickYour .inner .pick-left{
+    align-items: center;
+    order: 2;
+  }
+  .pickYour .inner .pick-left img:nth-child(4){
+    margin: 30px 0;
+  }
+  .pickYour .inner .pick-right{
+    width: 100%;
+    order: 1;
+  }
+  .magazine{
+    background: transparent;
+    height: auto;
+  }
+  .magazine .inner .magazine-right{
+    position: relative;
+    right: 0;
+    width: 100%;
+  }
+  .magazine .inner .magazine-left{
+    top: 90%;
+    left: 50%;
+    margin-left: -175px;
+    width: auto;
+  }
+  .store{
+    height: 750px;
+  }
+  .store .inner{
+    height: 100%;
+  }
+
+  .store .inner .store-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: 50%;
+    margin-left: -187px;
+    bottom: 15%;
   }
   .pc_img{
     display: none;
+  }
+  .m_img{
+    width: 100%;
+  }
+  /*swiper*/
+  .notice .promotion{
+    width: 640px;
+    height: 450px;
+    margin: 0 auto;
+  }
+  .notice .promotion .swiper {
+    width: calc(500px * 3 + 30px); /* 최대 너비를 640px로 설정 */
+    left: 50%;
+    margin-left: calc((500px * 3 + 30px ) / -2);
+  }
+
+  .notice .promotion .swiper-slide {
+    width: 500px;
+  }
+  .notice .promotion .swiper-slide img{
+    width: 100%;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 640px) {
@@ -676,7 +994,8 @@ body {
       display: none;
   }
   .main-visual-wrap{
-    margin-top: 70px;
+    /* margin-top: 70px; */
+    display: none;
   }
   .sbRewards .inner .rewards-right{
     width: 60%;
@@ -712,16 +1031,117 @@ body {
     background: url("../images/25th_summer_bean_bg_m.jpg")cover no-repeat;
     height: 125vw;
   }
+  .main-bean .inner{
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .main-bean .inner .main-bean-left {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+  }
+  .main-bean .inner .main-bean-left > img{
+    width: 70%;
+  }
+  .main-bean .inner .main-bean-right{
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .reserve-bean{
+    background: transparent;
+    width: 100%;
+    height: auto;
+  }
+  .reserve-bean .inner .reserve-bean-left{
+    top: 80%;
+    left: 50%;
+    margin-left: -194px;
+  }
+  .pickYour{
+    height: 150vw;
+  }
+  .pickYour .inner{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .pickYour .inner .pick-left{
+    align-items: center;
+    order: 2;
+  }
+  .pickYour .inner .pick-left img:nth-child(4){
+    margin: 30px 0;
+  }
+  .pickYour .inner .pick-right{
+    width: 100%;
+    order: 1;
+  }
+  .magazine{
+    background: transparent;
+    height: auto;
+  }
+  .magazine .inner .magazine-right{
+    position: relative;
+    right: 0;
+    width: 100%;
+  }
+  .magazine .inner .magazine-left{
+    top: 90%;
+    left: 50%;
+    margin-left: -175px;
+  }
+  .store{
+    height: 750px;
+  }
+  .store .inner{
+    height: 100%;
+  }
+  .store .inner .store-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: 50%;
+    margin-left: -187px;
+    bottom: 15%;
+  }
   .pc_img{
     display: none;
   }
+  .m_img{
+    width: 100%;
+  }
+  /*swiper*/
+  .notice .promotion{
+    width: 100%;
+    height: 450px;
+    margin: 0 auto;
+  }
+  .notice .promotion .swiper {
+    width: calc(300% + 30px); /* 최대 너비를 640px로 설정 */
+    left: 50%;
+    margin-left: calc((300% + 30px ) / -2);
+  }
+
+  .notice .promotion .swiper-slide {
+    width: 100%;
+  }
+  .notice .promotion .swiper-slide img{
+    width: 100%;
+  }  
+  .notice .promotion .swiper-slide img{
+    width: 100%;
+  }
+
 }
 @media screen and (max-width: 480px) {
   header > .inner {
       display: none;
   }
   .main-visual-wrap{
-    margin-top: 70px;
+    /* margin-top: 70px; */
+    display: none;
   }
   .sbRewards .inner{
     display: unset;
@@ -751,7 +1171,104 @@ body {
     background: url("../images/25th_summer_bean_bg_m.jpg")cover no-repeat;
     height: 125vw;
   }
+  .main-bean .inner{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .main-bean .inner .main-bean-left {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+  }
+  .main-bean .inner .main-bean-left > img{
+    width: 70%;
+  }
+  .main-bean .inner .main-bean-right{
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .reserve-bean{
+    background: transparent;
+    width: 100%;
+    height: 100%;
+  }
+  .reserve-bean .inner .reserve-bean-left{
+    top: 85%;
+    left: 50%;
+    margin-left: -194px;
+  }
+  .pickYour{
+    height: 150vw;
+  }
+  .pickYour .inner{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .pickYour .inner .pick-left{
+    align-items: center;
+    order: 2;
+    width: 90%;
+  }
+  .pickYour .inner .pick-left img:nth-child(4){
+    margin: 30px 0;
+  }
+  .pickYour .inner .pick-right{
+    width: 100%;
+    order: 1;
+  }
+  .magazine{
+    background: transparent;
+    height: auto;
+  }
+  .magazine .inner .magazine-right{
+    position: relative;
+    right: 0;
+    width: 100%;
+  }
+  .magazine .inner .magazine-left{
+    top: 90%;
+    left: 50%;
+    margin-left: -175px;
+  }
+  /*swiper*/
+  .notice .promotion{
+    width: 100%;
+    height: 450px;
+    margin: 0 auto;
+  }
+  .notice .promotion .swiper {
+    width: calc(300% + 30px); /* 최대 너비를 640px로 설정 */
+    left: 50%;
+    margin-left: calc((300% + 30px ) / -2);
+  }
+
+  .notice .promotion .swiper-slide {
+    width: 100%;
+  }
+  .notice .promotion .swiper-slide img{
+    width: 100%;
+  } 
+  .store{
+    height: 750px;
+  }
+  .store .inner{
+    height: 100%;
+  }
+  .store .inner .store-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: 50%;
+    margin-left: -187px;
+    bottom: 15%;
+  }
+
   .pc_img{
     display: none;
+  }
+  .m_img{
+    width: 100%;
   }
 }
