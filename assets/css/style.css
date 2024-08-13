@@ -806,6 +806,13 @@ a {
   height: 30rem;
 }
 
+.slide-item {
+  opacity: 0.5;
+}
+.slide-item.swiper-slide-active {
+  opacity: 1;
+}
+
 /* 뉴스 티커 & 프로모션 끝 */
 /* 리워드 시작 */
 #secReward {

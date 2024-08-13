@@ -15,6 +15,8 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
 
         <!-- Font Awesome -->
         <script src="https://kit.fontawesome.com/f67ce84ea1.js" crossorigin="anonymous"></script>
@@ -691,16 +693,16 @@
                 <section id="mainVisual">
                     <div class="visual-holder inner-wrapper">
                         <div class="logo-container">
-                            <img class="main-visual-logo" src="./assets/images/25th_top_slogan.png" alt="">
+                            <img class="main-visual-logo fade-in" src="./assets/images/25th_top_slogan.png" alt="">
 
-                            <a href="#" class="button-outline-fill" style="--button-color: rgb(3 98 67)">자세히 보기</a>
+                            <a href="#" class="button-outline-fill fade-in" style="--button-color: rgb(3 98 67)">자세히 보기</a>
                         </div>
 
                         <div class="drink-container full">
-                            <img class="main-visual-image set-1" src="./assets/images/2024_august_drink1.png" alt="">
-                            <img class="main-visual-image set-2" src="./assets/images/2024_august_drink2.png" alt="">
-                            <img class="main-visual-image set-3" src="./assets/images/2024_august_drink3.png" alt="">
-                            <img class="main-visual-image set-4" src="./assets/images/2024_august_drink4.png" alt="">
+                            <img class="main-visual-image set-1 fade-in" src="./assets/images/2024_august_drink1.png" alt="">
+                            <img class="main-visual-image set-2 fade-in" src="./assets/images/2024_august_drink2.png" alt="">
+                            <img class="main-visual-image set-3 fade-in" src="./assets/images/2024_august_drink3.png" alt="">
+                            <img class="main-visual-image set-4 fade-in" src="./assets/images/2024_august_drink4.png" alt="">
                         </div>
 
                         <div class="drink-container mobile">
@@ -755,23 +757,27 @@
                         <div class="slider-container">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide slide-item">
-                                    프로모션 슬라이드 1
+                                    <img src="./assets/images/tkJyS3_20240521155137816.jpg" alt="">
+
+                                    <a href="#" class="button-outline-fill">자세히 보기</a>
                                 </div>
 
                                 <div class="swiper-slide slide-item">
-                                    프로모션 슬라이드 2
+                                    <img src="./assets/images/cfFwxf_20240801154828783.jpg" alt="">
+
+                                    <a href="#" class="button-outline-fill">자세히 보기</a>
                                 </div>
 
                                 <div class="swiper-slide slide-item">
-                                    프로모션 슬라이드 3
+                                    <img src="./assets/images/tkJyS3_20240521155137816.jpg" alt="">
+
+                                    <a href="#" class="button-outline-fill">자세히 보기</a>
                                 </div>
 
                                 <div class="swiper-slide slide-item">
-                                    프로모션 슬라이드 4
-                                </div>
+                                    <img src="./assets/images/cfFwxf_20240801154828783.jpg" alt="">
 
-                                <div class="swiper-slide slide-item">
-                                    프로모션 슬라이드 5
+                                    <a href="#" class="button-outline-fill">자세히 보기</a>
                                 </div>
                             </div>
                         </div>
@@ -779,7 +785,12 @@
                         <button type="button" id="btnPrev">이전</button>
                         <button type="button" id="btnNext">다음</button>
 
-                        <ul id="slidePagination"></ul>
+                        <div>
+                            <button type="button" id="btnToggleSlide">
+                                <i class="fa-solid fa-pause"></i>
+                            </button>
+                            <ul id="slidePagination"></ul>
+                        </div>
                     </div>
                 </section> <!-- #secNews -->
 
@@ -861,7 +872,6 @@
                         <img src="./assets/images/221212_pc_main_story_txt_2.png" alt="">
                         <a href="#" class="button-outline-fill">매장 찾기</a>
                         <img src="./assets/images/store_exp_img04.png" alt="">
-                        매장찾기
                     </div>
                 </section> <!-- #secFindStore -->
             </div> <!-- #contentView -->

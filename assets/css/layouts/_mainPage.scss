@@ -170,6 +170,22 @@
     }
 }
 
+.slider-container {
+
+}
+
+.swiper-wrapper {
+
+}
+
+.slide-item {
+    opacity: .5;
+
+    &.swiper-slide-active {
+        opacity: 1;
+    }
+}
+
 /* 뉴스 티커 & 프로모션 끝 */
 /* 리워드 시작 */
 
