@@ -1,12 +1,14 @@
 /* _mainPage.scss */
 
 #wrap {
-    background-image: url('../images/2024_august_pick_bg.png');
+    background-image: url('../images/2024_august_pick_bg.png'); // 굿즈 부분 고정 배경
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
 }
+
+/* 메인 비쥬얼 시작 */
 
 #mainVisual {
     width: 100vw;
@@ -98,12 +100,15 @@
     }
 }
 
+/* 메인 비쥬얼 끝 */
+/* 뉴스 티커 & 프로모션 시작 */
+
 #secNews {
     background-color: white;
 }
 
 .news-headline {
-    background-image: linear-gradient(to right, black 50%, white 50%);
+    background-image: linear-gradient(to right, black 50%, rgb(246 245 239) 50%);
 
     > .inner-wrapper {
         display: flex;
@@ -135,23 +140,46 @@
     color: white;
 }
 
+#newsScroller {
+    height: 1rem;
+    overflow: hidden;
+
+    > .news-item {
+        line-height: 1rem;
+        transition: .5s;
+
+        &:not(:first-child) {
+            margin-block-start: 1rem;
+        }
+    }
+}
+
 .promotion-opener {
     padding-block: 1rem;
+    background-color: rgb(246 245 239);
 }
 
 #promoSlider {
     height: 0;
+    background-color: rgb(246 245 239);
+    transition: height .5s;
     overflow: hidden;
 
     &.on {
-        height: 100%;
+        height: 30rem;;
     }
 }
+
+/* 뉴스 티커 & 프로모션 끝 */
+/* 리워드 시작 */
 
 #secReward {
     background-color: rgb(30 57 50);
     color: white;
 }
+
+/* 리워드 끝 */
+/* 신상품 시작 */
 
 #secNewItems {
 
@@ -171,9 +199,21 @@
     }
 }
 
+/* 신상품 끝 */
+/* 굿즈 시작 */
+
+#secGoods {
+
+}
+
+/* 굿즈 끝 */
+/* 리저브 매거진 시작 */
+
 #secMagazine {
     background-color: white;
 }
+
+/* 매장 찾기 시작 */
 
 #secFindStore {
     background-image: url('../images/store_bg.png');
@@ -181,5 +221,7 @@
     background-position: center;
     background-size: cover;
 }
+
+/* 매장 찾기 끝 */
 
 /* _mainPage.scss */

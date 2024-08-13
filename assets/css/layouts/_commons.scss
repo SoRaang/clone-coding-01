@@ -18,7 +18,8 @@
 }
 
 .button-outline-fill {
-    --button-color: attr(data-button-color);
+    --button-color: black;
+    --text-color: white;
 
     display: inline-block;
     padding: .4rem 1rem;
@@ -30,7 +31,24 @@
 
     &:hover {
         background-color: var(--button-color);
-        color: white;
+        color: var(--text-color);
+        text-decoration: underline 1px;
+    }
+}
+
+.button-fill {
+    --button-color: black;
+    --text-color: white;
+
+    display: inline-block;
+    padding: .5rem 1.1rem;
+    border-radius: .25rem;
+    background-color: var(--button-color);
+    color: var(--text-color);
+    font-weight: 600;
+
+    &:hover {
+        text-decoration: underline 1px;
     }
 }
 
